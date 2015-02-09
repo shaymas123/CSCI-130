@@ -1,0 +1,38 @@
+package main
+
+import (
+        "fmt"
+)
+
+type colors struct{
+
+    favorite string
+    worst string
+}
+
+func myColors(myColors colors){
+  string1, string2 := messageCreate(myColors.favorite,myColors.worst)
+  fmt.Println(string1)
+  fmt.Println(string2)
+}
+
+func messageCreate(favorite, worst string)(string,string){
+
+  result := "Your favorite is "+favorite+" and your worst is "+worst
+  result2 := "But the best is "+theVeryBestColor
+  return result,result2
+}
+const(
+
+  theVeryBestColor = "red"
+  )
+
+func main() {
+  var newColors = colors{}
+  newColors.favorite = "green"
+  newColors.worst = "Black"
+  myColors(newColors)
+
+
+
+}
