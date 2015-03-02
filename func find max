@@ -1,0 +1,10 @@
+func Findmax(val ...int) int {
+
+	max := 0
+	for _, val := range x {
+		if val > max {
+			max = val
+		}
+	}
+	return max
+}

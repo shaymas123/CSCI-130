@@ -1,0 +1,10 @@
+
+
+func half(num int) (int, bool) {
+	val := num / 2
+	if num%2 == 0 {
+		return val, true
+	} else {
+		return val, false
+	}
+}
